@@ -5,11 +5,18 @@
 
 import random
 
-list = []
+# Изначальный способ создания списка 
+# list = []
+# n = 10
+# for i in range (n):
+#     list.append(random.randint(-n, n))
+# print('Список: ', list)
+
+# Способ с использованием включения
+
 n = 10
-for i in range (n):
-    list.append(random.randint(-n, n))
-print('Список: ', list)
+list = [random.randint(-n, n) for i in range(n)]
+print(list)
 
 list_result = []
 
