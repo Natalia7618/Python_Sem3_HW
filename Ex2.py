@@ -16,7 +16,7 @@ import random
 
 n = 10
 list = [random.randint(-n, n) for i in range(n)]
-print(list)
+print('Список: ', list)
 
 list_result = []
 

@@ -2,12 +2,26 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
+# Изначальный способ
 import random
 
-list = []
+# list = []
+# n = 5
+# for i in range (n):
+#     list.append(random.randint(-n, n))
+# print('Список: ', list)
+
+# summ = 0
+# for i in range (n):
+#     if i % 2 != 0:
+#         summ += list[i]
+
+# print ('Сумма элементов списка, стоящих на нечётных позициях =', summ)
+
+# Способ с использованием включения
+
 n = 5
-for i in range (n):
-    list.append(random.randint(-n, n))
+list = [random.randint(-n, n) for i in range(n)]
 print('Список: ', list)
 
 summ = 0
